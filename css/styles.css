@@ -259,6 +259,19 @@ img {
     margin-left: 30px;
 }
 
+.advantages-list-item-icon-box {
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-list-item-icon {
+    display: block;
+}
+
 .advantages-list-item-title {
     font-size: 14px;
     line-height: calc(16 / 14);
