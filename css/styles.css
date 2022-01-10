@@ -16,6 +16,7 @@
     --portfolio-btn-primary-color: #f5f4fa;
     --team-icons-color: #afb1b8;
     --team-icons-hover-color: #ffffff;
+    --footer-icons-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Сброс ненужных стилей */
@@ -351,10 +352,6 @@ img {
     display: flex;
 }
 
-.team-icon-list-item {
-    display: flex;
-}
-
 .team-icon-list-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -425,6 +422,16 @@ img {
     padding-bottom: 60px;
 }
 
+/* Контейнер футера */
+.footer-container {
+    display: flex;
+}
+
+/* Контейнер адреса футера */
+.footer-address-box {
+    margin-right: 70px;
+}
+
 /* Логотип футера */
 .footer-logo {
     margin-bottom: 20px;
@@ -457,6 +464,45 @@ img {
 .footer-address-list-item-link:hover,
 .footer-address-list-item-link:focus {
     color: var(--accent-color);
+}
+
+.footer-icon-box {
+    padding-top: 12px;
+}
+
+.footer-icon-title {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--footer-primary-text-color);
+    margin-bottom: 20px;
+}
+
+.footer-icon-list {
+    display: flex;
+}
+
+.footer-icon-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon-list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-icons-bg-color);
+}
+
+.footer-icon-list-item-link:hover,
+.footer-icon-list-item-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-icon {
+    fill: var(--footer-primary-text-color);
 }
 
 /* Основной контент страницы portfolio */
