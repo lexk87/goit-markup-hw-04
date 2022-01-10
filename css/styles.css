@@ -14,6 +14,8 @@
     --footer-primary-text-color: #ffffff;
     --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
     --portfolio-btn-primary-color: #f5f4fa;
+    --team-icons-color: #afb1b8;
+    --team-icons-hover-color: #ffffff;
 }
 
 /* Сброс ненужных стилей */
@@ -336,6 +338,40 @@ img {
     font-size: 16px;
     line-height: calc(19 / 16);
     color: var(--secondary-text-color);
+    margin-bottom: 16px;
+}
+
+.team-icon-list {
+    display: flex;
+}
+
+.team-icon-list-item {
+    display: flex;
+}
+
+.team-icon-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-icon-list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--team-icons-color);
+}
+
+.team-icon-list-item-link:hover,
+.team-icon-list-item-link:focus {
+    background-color: var(--accent-color);
+    color: var(--team-icons-hover-color);
+}
+
+.team-icon {
+    display: block;
+    fill: currentColor;
 }
 
 /* Футер страницы */
